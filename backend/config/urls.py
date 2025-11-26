@@ -20,6 +20,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/auth/', include('accounts.urls')),
+    path('api/rooms/', include('rooms.urls')),
 ]
 
 # Debug Toolbar (only in DEBUG mode)
